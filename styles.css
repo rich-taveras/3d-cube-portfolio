@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background: url("https://img.freepik.com/premium-photo/high-definition-star-field-colorful-night-sky-space-nebula-galaxies-space-astronomy-concept-background_232070-8070.jpg")
+    center/cover no-repeat fixed;
 }
 
 .container {
@@ -18,8 +19,37 @@ section {
 
 .home {
   height: 60vh;
-  overflow: hidden;
   position: relative;
+  text-align: center;
+  margin-top: 50px; /* Adjust as needed */
+  z-index: 1; /* Bring the content above the background */
+}
+
+.home-text {
+  position: absolute;
+  bottom: -50px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 800px; /* Adjust as needed */
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Adjust background color and opacity */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-text h1 {
+  font-size: 28px;
+}
+
+.home-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
 }
 
 .cube {
@@ -71,14 +101,34 @@ section {
     transform: rotateY(360deg) rotateX(360deg);
   }
 }
+/* intro */
+.intro-view {
+  margin: 2px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16pt;
+  color: white;
+}
+
+.arrow {
+  color: red;
+}
+
 /* about */
-.about-section {
+.about-section,
+.projects-section,
+.contact-section {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
-  background-color: black;
+  min-height: 100vh;
+}
+.about-section p {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .title {
@@ -108,4 +158,47 @@ footer .social-icons {
 
 a:hover {
   color: red;
+}
+
+/* contact section*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #3356FF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #337CFF;
+}
+
+.contact-section {
+  display: flex;
+   justify-content: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  opacity: .2;
+  
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
