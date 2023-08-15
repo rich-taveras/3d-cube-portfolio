@@ -8,7 +8,6 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  
 }
 
 section {
@@ -24,16 +23,15 @@ section {
   text-align: center;
   margin-top: 50px; /* Adjust as needed */
   z-index: 1; /* Bring the content above the background */
-  
 }
 
-.test-section{
+.test-section {
   min-height: 30vh;
-
 }
 
 .home-text {
   text-align: center;
+  color: whitesmoke;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -45,8 +43,7 @@ section {
     0.2
   ); /* Adjust background color and opacity */
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 0 10px 20px black;
 }
 
 .home-text h1 {
@@ -130,7 +127,6 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  border: 2px solid red;
 }
 .about-section p {
   align-items: center;
@@ -168,7 +164,12 @@ a:hover {
 }
 
 /* contact section*/
-input[type=text], select, textarea {
+label {
+  color: whitesmoke;
+}
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -179,18 +180,46 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #3356FF;
+input[type="submit"] {
+  background-color: #3356ff;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
-p{
+p {
   color: white;
 }
 
-input[type=submit]:hover {
-  background-color: #337CFF;
+input[type="submit"]:hover {
+  background-color: #337cff;
+}
+
+/* portfolio section */
+
+.container {
+  margin-top: 20px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.col-sm-5,
+.col-md-6 {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Optional: Style for the images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: Style for the text inside columns */
+p {
+  margin-top: 10px;
+  font-size: 14px;
 }
