@@ -1,20 +1,46 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("https://img.freepik.com/premium-photo/high-definition-star-field-colorful-night-sky-space-nebula-galaxies-space-astronomy-concept-background_232070-8070.jpg")
+  background: url(./images/pexels-marco-milanesi-2670898.jpg)
     center/cover no-repeat fixed;
 }
+section {
+  height: 100hv;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* Optional: Style for the images */
+img {
+  max-width: 100%;
+}
+
+/* Optional: Style for the text inside columns */
+p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.navigation{
+  text-align: end;
+  color: red;
+  font-size: 30px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
 .container {
   display: flex;
   flex-direction: column;
 }
 
-section {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.myCV{
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+.section:nth-child(even) {
+  background-color: #ccc;
 }
 
 .home {
@@ -26,7 +52,7 @@ section {
 }
 
 .test-section {
-  min-height: 30vh;
+  min-height: 20vh;
 }
 
 .home-text {
@@ -149,7 +175,8 @@ footer p {
   color: whitesmoke;
 }
 
-footer .social-icons {
+.social-icons {
+  padding: 100px;
   text-align: center;
 }
 
@@ -197,29 +224,7 @@ input[type="submit"]:hover {
 }
 
 /* portfolio section */
-
-.container {
-  margin-top: 20px;
-}
-
-.row {
-  margin-bottom: 20px;
-}
-
-.col-sm-5,
-.col-md-6 {
-  padding: 20px;
+.projects_container {
+  width: 50%;
   text-align: center;
-}
-
-/* Optional: Style for the images */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Optional: Style for the text inside columns */
-p {
-  margin-top: 10px;
-  font-size: 14px;
 }
