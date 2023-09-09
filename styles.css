@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background: url(./images/hd-mars-image.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
 }
 section {
   height: 100hv;
@@ -21,8 +23,8 @@ p {
   font-size: 14px;
 }
 .navigation{
+  color: white;
   text-align: end;
-  color: red;
   font-size: 30px;
   margin-right: 20px;
   margin-top: 10px;
@@ -32,11 +34,10 @@ p {
   flex-direction: column;
 }
 
-
 .myCV{
   text-decoration: none;
   font-weight: bold;
-  text-align: center;
+  font-size: large;
 }
 .section:nth-child(even) {
   background-color: #ccc;
@@ -141,6 +142,7 @@ p {
 
 .arrow {
   color: red;
+  text-decoration: none;
 }
 
 /* about */
@@ -227,6 +229,8 @@ input[type="submit"]:hover {
   width: 50%;
   text-align: center;
 }
+
+/* shooting star*/
 span {
   position: absolute;
   top: 50%;
@@ -235,8 +239,9 @@ span {
   height: 4px;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba (255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
   animation: animate 3s linear infinite;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba (255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+  
 }
 span::before {
   content: "";
@@ -246,6 +251,7 @@ span::before {
   width: 300px;
   height: 1px;
   background: linear-gradient(90deg, #fff, transparent);
+  
 }
 @keyframes animate
 {
@@ -254,6 +260,6 @@ span::before {
   }
  100%{
    transform: rotate(315deg) translate(-2000px)
- }
+ } 
   
 }
