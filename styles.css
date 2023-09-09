@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(./images/pexels-marco-milanesi-2670898.jpg)
-    center/cover no-repeat fixed;
+  background: url(./images/hd-mars-image.jpg);
 }
 section {
   height: 100hv;
@@ -52,7 +51,7 @@ p {
 }
 
 .test-section {
-  min-height: 20vh;
+  min-height: 60vh;
 }
 
 .home-text {
@@ -227,4 +226,34 @@ input[type="submit"]:hover {
 .projects_container {
   width: 50%;
   text-align: center;
+}
+span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba (255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+  animation: animate 3s linear infinite;
+}
+span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
+}
+@keyframes animate
+{
+  0%{ 
+    transform: rotate(315deg) translateX(0);
+  }
+ 100%{
+   transform: rotate(315deg) translate(-10000px)
+ }
+  
 }
