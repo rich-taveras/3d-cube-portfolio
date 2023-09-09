@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: url(./images/hd-mars-image.jpg);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-color: black;
 }
@@ -22,7 +23,7 @@ p {
   margin-top: 10px;
   font-size: 14px;
 }
-.navigation{
+.navigation {
   color: white;
   text-align: end;
   font-size: 30px;
@@ -34,7 +35,7 @@ p {
   flex-direction: column;
 }
 
-.myCV{
+.myCV {
   text-decoration: none;
   font-weight: bold;
   font-size: large;
@@ -240,8 +241,8 @@ span {
   background: #fff;
   border-radius: 50%;
   animation: animate 3s linear infinite;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba (255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
-  
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba (255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
 }
 span::before {
   content: "";
@@ -251,15 +252,12 @@ span::before {
   width: 300px;
   height: 1px;
   background: linear-gradient(90deg, #fff, transparent);
-  
 }
-@keyframes animate
-{
-  0%{ 
+@keyframes animate {
+  0% {
     transform: rotate(315deg) translateX(0);
   }
- 100%{
-   transform: rotate(315deg) translate(-2000px)
- } 
-  
+  100% {
+    transform: rotate(315deg) translate(-2000px);
+  }
 }
